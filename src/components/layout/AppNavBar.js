@@ -62,7 +62,11 @@ class AppNavbar extends Component {
                     {auth.email}
                   </a>
                 </li>
-
+                <li className="nav-item">
+                  <Link to="/settings" className="nav-link">
+                    Settings
+                  </Link>
+                </li>
                 <li className="nav-item">
                   <a
                     href="#!"
