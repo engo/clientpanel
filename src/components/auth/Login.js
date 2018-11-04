@@ -72,7 +72,7 @@ class Login extends Component {
   }
 }
 
-Login.PropTypes = {
+Login.propTypes = {
   firebase: PropTypes.object.isRequired
 };
 
