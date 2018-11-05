@@ -28,9 +28,21 @@ class App extends Component {
                   path="/"
                   component={UserIsAuthenticated(Dashboard)}
                 />
-                <Route exact path="/client/add" component={AddClient} />
-                <Route exact path="/client/edit/:id" component={EditClient} />
-                <Route exact path="/client/:id" component={ClientDetails} />
+                <Route
+                  exact
+                  path="/client/add"
+                  component={UserIsAuthenticated(AddClient)}
+                />
+                <Route
+                  exact
+                  path="/client/edit/:id"
+                  component={UserIsAuthenticated(EditClient)}
+                />
+                <Route
+                  exact
+                  path="/client/:id"
+                  component={UserIsAuthenticated(ClientDetails)}
+                />
                 <Route
                   exact
                   path="/login"
