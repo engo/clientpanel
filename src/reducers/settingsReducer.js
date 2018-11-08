@@ -4,7 +4,13 @@ import {
   ALLOW_REGISTRATION
 } from "../actions/types";
 
-export default function(state = {}, action) {
+const initialState = {
+  disableBalanceOnAdd: true,
+  disableBalanceOnEdit: false,
+  allowRegistration: false
+};
+
+export default function(state = initialState, action) {
   switch (action.type) {
     case DISABLE_BALANCE_ON_ADD:
       return {

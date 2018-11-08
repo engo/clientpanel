@@ -5,11 +5,11 @@ import { UserIsAuthenticated, UserIsNotAuthenticated } from "./helpers/auth";
 import { Provider } from "react-redux";
 import store from "./store";
 
-import AppNavBar from "./components/layout/AppNavBar";
+import AppNavbar from "./components/layout/AppNavBar";
 import Dashboard from "./components/layout/Dashboard";
 import AddClient from "./components/clients/AddClient";
-import ClientDetails from "./components/clients/ClientDetails";
 import EditClient from "./components/clients/EditClient";
+import ClientDetails from "./components/clients/ClientDetails";
 import Login from "./components/auth/Login";
 import Settings from "./components/settings/Settings";
 
@@ -21,7 +21,7 @@ class App extends Component {
       <Provider store={store}>
         <Router>
           <div className="App">
-            <AppNavBar />
+            <AppNavbar />
             <div className="container">
               <Switch>
                 <Route
@@ -46,18 +46,14 @@ class App extends Component {
                 />
                 <Route
                   exact
-                  path="/"
-                  component={UserIsAuthenticated(Dashboard)}
+                  path="/login"
+                  component={UserIsNotAuthenticated(Login)}
                 />
+
                 <Route
                   exact
                   path="/settings"
                   component={UserIsAuthenticated(Settings)}
-                />
-                <Route
-                  exact
-                  path="/login"
-                  component={UserIsNotAuthenticated(Login)}
                 />
               </Switch>
             </div>
