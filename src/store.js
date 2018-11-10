@@ -8,12 +8,12 @@ import notifyReducer from "./reducers/notifyReducer";
 import settingsReducer from "./reducers/settingsReducer";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyAPpq_hjKMADVSbkwEWBVr5PdEKL1qbEx0",
-  authDomain: "react-client-panel-56cff.firebaseapp.com",
-  databaseURL: "https://react-client-panel-56cff.firebaseio.com",
-  projectId: "react-client-panel-56cff",
-  storageBucket: "react-client-panel-56cff.appspot.com",
-  messagingSenderId: "219982124454"
+  apiKey: "AIzaSyAj2cQpepAuQjR_BzjiXikbV2zACUF5vsY",
+  authDomain: "reactclientpanel-61f9d.firebaseapp.com",
+  databaseURL: "https://reactclientpanel-61f9d.firebaseio.com",
+  projectId: "reactclientpanel-61f9d",
+  storageBucket: "reactclientpanel-61f9d.appspot.com",
+  messagingSenderId: "485531386544"
 };
 
 // react-redux-firebase config
@@ -43,18 +43,19 @@ const rootReducer = combineReducers({
 });
 
 // Check for settings in localStorage
-
 if (localStorage.getItem("settings") == null) {
+  // Default settings
   const defaultSettings = {
-    // Default settings
     disableBalanceOnAdd: true,
     disableBalanceOnEdit: false,
     allowRegistration: false
   };
 
-  localStorage.setItem("setting", JSON.stringify(defaultSettings));
+  // Set to localStorage
+  localStorage.setItem("settings", JSON.stringify(defaultSettings));
 }
 
+// Create initial state
 const initialState = { settings: JSON.parse(localStorage.getItem("settings")) };
 
 // Create store
