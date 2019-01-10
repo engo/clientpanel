@@ -1,0 +1,29 @@
+[debug] [2018-12-02T11:08:45.724Z] ----------------------------------------------------------------------
+[debug] [2018-12-02T11:08:45.726Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Wilson\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js serve
+[debug] [2018-12-02T11:08:45.726Z] CLI Version:   6.0.1
+[debug] [2018-12-02T11:08:45.726Z] Platform:      win32
+[debug] [2018-12-02T11:08:45.726Z] Node Version:  v8.12.0
+[debug] [2018-12-02T11:08:45.727Z] Time:          Sun Dec 02 2018 22:08:45 GMT+1100 (AUS Eastern Daylight Time)
+[debug] [2018-12-02T11:08:45.727Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-12-02T11:08:45.754Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-12-02T11:08:45.754Z] > authorizing via signed-in user
+[debug] [2018-12-02T11:08:45.755Z] [iam] checking project react-client-panel-56cff for permissions ["firebase.projects.get"]
+[debug] [2018-12-02T11:08:45.756Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2018-12-02T11:08:45.756Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2018-12-02T11:08:46.072Z] <<< HTTP RESPONSE 200
+[debug] [2018-12-02T11:08:46.080Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/react-client-panel-56cff:testIamPermissions  
+
+[debug] [2018-12-02T11:08:47.512Z] <<< HTTP RESPONSE 200
+[debug] [2018-12-02T11:08:47.512Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/react-client-panel-56cff  
+ 
+[debug] [2018-12-02T11:08:48.775Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from 'C:\Users\Wilson\Documents\Websites\clientpanel'...
+[info] 
+[debug] [2018-12-02T11:08:48.776Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/219982124454/clients/_:getWebAppConfig  
+ 
+[debug] [2018-12-02T11:08:49.584Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: build
+[info] +  hosting: Local server: http://localhost:5000

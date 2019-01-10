@@ -7,6 +7,8 @@ import store from "./store";
 
 import AppNavbar from "./components/layout/AppNavBar";
 import Dashboard from "./components/layout/Dashboard";
+import Notfound from "./components/layout/Notfound";
+
 import AddClient from "./components/clients/AddClient";
 import EditClient from "./components/clients/EditClient";
 import ClientDetails from "./components/clients/ClientDetails";
@@ -61,6 +63,7 @@ class App extends Component {
                   path="/settings"
                   component={UserIsAuthenticated(Settings)}
                 />
+                <Route component={UserIsAuthenticated(Notfound)} />
               </Switch>
             </div>
           </div>
